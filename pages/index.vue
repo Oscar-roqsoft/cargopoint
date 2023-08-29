@@ -97,7 +97,7 @@
         <div class="grid grid-cols-1  md:grid-cols-2 min-h-[400px]">
             <div class="bg-[#091242] flex flex-col justify-center items-center">
                 <div class=" md:max-w-[1150px] md:px-4  md:mx-auto  ">
-                        <img src="/Image2.png" class="h-[200px]  md:h-[300px]  md:max-w-[600px] relative top-8 md:top-0 md:left-28 shadow-lg rounded" alt="">
+                        <img src="/Image1.png" class="h-[200px]  md:h-[300px]  md:max-w-[600px] relative top-8 md:top-0 md:left-28 shadow-lg rounded" alt="">
                 </div>
             </div>
             <div class=" max-w- [1150px] px-4 py-14  md:py-0 mx-auto flex justify-center items-center md:pl-14">
