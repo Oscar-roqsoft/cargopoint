@@ -55,13 +55,13 @@ onMounted(() => {
 
 const testimonial =[
     {
-       img:"/user.png",
+       img:"/User.png",
        article:"Leverage agile frameworks to provide a robust synopsis for strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.",
        name:"Kathleen Smith",
        workplace:"Fuel Company",   
     },
     {
-       img:"/user1.png",
+       img:"/User1.png",
        article:"Leverage agile frameworks to provide a robust synopsis for strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.",
        name:"Nickolas Jackson",
        workplace:"Automobile Company",   
