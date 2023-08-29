@@ -19,8 +19,8 @@
               </button>
 
 
-              <div  class=" hidden bg-blue-800  md:bg-transparent  fixed -z-0 md:relative md:top-0 top-[58px]  left-0  w-full border md:border-0 rounded   
-               md:flex md:justify-center md:items-center md:w-auto animate__animated  animate__slideInDown" id="navbar-dropdown">
+              <div  class=" hidden bg-blue-800  md:bg-transparent  fixed -z-0 md:relative md:top-0 top-[54px]  left-0  w-full border md:border-0 rounded   
+               md:flex md:justify-center md:items-center md:w-auto  fadeAnime" id="navbar-dropdown">
                 <ul v-for="item in navItems " :key="item" 
                   class=" flex flex-col w-full  md:mr-5 lg:mr-10 py-2 md:items-center font-medium  md:py-0  text-lg border-gray-100
                    md:flex-row md:space-x-8 md:mt-0  md:border-0"
@@ -28,16 +28,18 @@
 
                     <li  @click="showNav=item.title" >
 
-                      <button id="dropdownNavbarLink" :data-dropdown-toggle="item.id===3?'dropdownNavbar':''" class="flex  capitalize  items-center justify-between
-                       w-full py-2 pl-3 pr-4 rounded hover:bg-[#FFB629] md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0
-                        md:w-auto "
-                        :class="showNav===item.title?'bg-[#FFB629] md:bg-transparent md:text-blue-700':''">{{ item.title }} <svg class="w-2.5 h-2.5 ml-2.5"
-                          :class="item.id===3?'flex':'hidden'" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                          fill="none" viewBox="0 0 10 6">
-                          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
-                          </svg>
-                      </button>
-
+                     
+                       <nuxt-link :to="item.link" >
+                          <button  id="dropdownNavbarLink" :data-dropdown-toggle="item.id===3?'dropdownNavbar':''" class="flex  capitalize  items-center justify-between
+                          w-full py-2 pl-3 pr-4 rounded  md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0
+                          md:w-auto "
+                          :class="showNav===item.title?'bg-[#FFB629] md:bg-transparent md:text-blue-700':''">{{ item.title }} <svg class="w-2.5 h-2.5 ml-2.5"
+                            :class="item.id===3?'flex':'hidden'" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                            fill="none" viewBox="0 0 10 6">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                            </svg>
+                          </button>
+                       </nuxt-link>
 
                       <!-- Dropdown menu -->
                       <div id="dropdownNavbar" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44
@@ -116,23 +118,45 @@ const navItems = [
     {
         id:1,
         title:"home",
+        link:'',
     },
     {
         id:2, 
         title:"about",
+        link:'about',
     },
     {    
         id:3,
         title:"pages",
+        link:'',
         dropdownitems:["page1","pages2","pages3","pages4"]
      },
      {
         id:4, 
         title:"project",
+        link:'',
     },
      {
         id:5 , 
         title:"contact",
+        link:'',
     }
 ]
 </script>
+
+
+<style scoped>
+
+@keyframes fadeIn {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+.fadeAnime{
+  animation: fadeIn  0.7s ease-in-out;
+}
+</style>
