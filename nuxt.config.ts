@@ -23,7 +23,6 @@ css: ['~/assets/css/main.css'],
       title: 'logistics',
       htmlAttrs: {
         lang: 'en',
-        class: 'light'
       },
       meta: [
         { charset: 'utf-8' },
