@@ -2,7 +2,7 @@
 
     <div class="bg-[url('/Photo.png')]  bg-auto bg-center md:bg-contain  bg-no-repeat pt-10">
        <div class="  max-w-[1150px] px-4 mx-auto">
-           <section class="min-h-screen  text-gray-100 flex flex-col justify-center items-start">
+           <section class="min-h-[470px] md:min-h-screen  text-gray-100 flex flex-col justify-center items-start">
                 <span class="border-l-2 pl-2 text-xs border-orange-400">Logistics & Supply Chain Solutions</span>
                 <h1 class="text-4xl my-2 font-bold">Your Gateway <br>
                     to any Destination <br> in the World
