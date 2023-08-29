@@ -28,7 +28,7 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-6 min-h-[500px] md:min-h-[400px] p-4 mb-16 md:px-16 md:pt-10 md:mb-0  relative bottom-24 bg-[#f4f4f4] rounded">
                     <div>
                         <span class="text-xs border-l-4 px-2 py-1 border-[#FFB629] bg-gray-600 text-white">Why us</span>
-                        <h1 class="text-gray-950 text-4xl font-semibold my-4">We provide full range global logistics solution</h1>
+                        <h1 class="text-gray-950 text-2xl font-semibold my-4">We provide full range global logistics solution</h1>
                         <p class="my-4 text-sm">Leverage agile frameworks to provide a robust synopsis for strategy foster collaborative thinking to further the overall value proposition. 
                         </p>
                         <p  class="my-4 text-sm">Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.</p>
