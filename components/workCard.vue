@@ -1,7 +1,8 @@
 <template>
      
 <div  class="grid grid-cols-1 md:grid-cols-4  lg:grid-cols-5 gap-2 md:gap-4" >
-    <div   v-for="item in workCard" class="relative bg-white border  border-gray-200 rounded-lg">
+    <div   v-animate-on-scroll
+    v-for="item in workCard" class="relative bg-white border  border-gray-200 rounded-lg">
         <a href="#" class="relative ">
             <img class="rounded z-0 w-full h" :src="item.img" alt="" />
         </a> 
@@ -32,3 +33,16 @@ const workCard = [
     {img:'/work5.png',desc:'Specialized Transport',work:'Ocean Transports'}
 ]
 </script>
+
+<style scoped>
+
+.before-enter{
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 2s ease-in-out ;
+}
+.enter{
+    opacity: 1;
+    transform: translateY(0);
+}
+</style>

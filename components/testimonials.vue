@@ -13,7 +13,8 @@
      
 
     <div class="flex flex-col md:flex-row gap-3">
-        <div v-for="item in testimonial"
+        <div v-animate-on-scroll
+        v-for="item in testimonial"
         class="h-[240px] w-[310px] bg-[#f4f4f4]  text-gray-900 shadow p-6 " >
             <div class="flex justify-between items-center">
                 <div class="flex">
@@ -68,3 +69,17 @@ const testimonial =[
     },
 ]
 </script>
+
+
+<style scoped>
+
+.before-enter{
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 2s ease-in-out ;
+}
+.enter{
+    opacity: 1;
+    transform: translateY(0);
+}
+</style>
