@@ -1,6 +1,6 @@
 <template>
 
-    <section class="min-h-[300px] md:min-h-[200px] my-10">
+    <section class="min-h-[300px] md:min-h-[200px] my-6">
         <div class="max-w-[1150px] px-4 mx-auto flex flex-col md:flex-row text-gray-800">
             <div class="md:w-[30%] mr-4 md:my-4">
                 <span class="text-xs border-l-2 pl-2 border-orange-500">What can we do</span>
