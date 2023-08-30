@@ -122,7 +122,13 @@
     <!-- team section -->
      <section>
         <div class="max-w-[1150px] px-4 mx-auto">
-               <Team/>
+            <div class="pb-10 flex justify-center items-center">
+                <div class="flex flex-col items-center justify-center">
+                    <span class="text-xs border-l-2 px-2 py-1 border-[#FFB629] bg-gray-500 text-white ">Our Team</span>
+                    <h1 class="text-gray-950 font-extrabold text-lg my-1">Meet My Expert Team</h1>
+                    <Team/>
+                </div>
+            </div>
         </div>
      </section>
 

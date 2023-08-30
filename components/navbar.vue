@@ -118,7 +118,7 @@ const navItems = [
     {
         id:1,
         title:"home",
-        link:'',
+        link:'index',
     },
     {
         id:2, 
