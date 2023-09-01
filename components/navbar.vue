@@ -39,25 +39,26 @@
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
                             </svg>
                           </button>
-                       </nuxt-link>
+                       </nuxt-link>   
 
                       <!-- Dropdown menu -->
                       <div id="dropdownNavbar" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44
                         ">
                         <ul class=" text-sm text-gray-700 " aria-labelledby="dropdownLargeButton">
                           <li class="">
-                            <a href="#" class="block px-4 py-2 hover:bg-blue-700 rounded-t-lg hover:text-gray-100 ">Dashboard</a>
+                            <nuxt-link to="/pricing"  class="block px-4 py-2 hover:bg-blue-700 rounded-t-lg hover:text-gray-100 ">Pricings </nuxt-link>
                           </li >
                           <li class="">
-                            <a href="#" class="block px-4 py-2 hover:bg-blue-700 hover:text-gray-100 ">Settings</a>
+                            <nuxt-link to="/services" class="block px-4 py-2 hover:bg-blue-700 hover:text-gray-100 ">Services</nuxt-link>
                           </li>
                           <li class="">
-                            <a href="#" class="block px-4 py-2 hover:bg-blue-700  hover:text-gray-100 ">Earnings</a>
+                            <nuxt-link to="#"  class="block px-4 py-2 hover:bg-blue-700  hover:text-gray-100 ">Our Team</nuxt-link>
+                          </li>
+                          <li class="#">
+                            <nuxt-link to="#" class="block px-4 py-2 hover:bg-blue-700 hover:text-gray-100 ">Blogs</nuxt-link>
                           </li>
                         </ul>
-                        <div class="py-1 hover:bg-blue-700 rounded-b-lg">
-                          <a href="#" class="block px-4 py-2 text-sm text-gray-700   hover:text-gray-100 ">Sign out</a>
-                        </div>
+                       
                       </div>
  
                     </li>
@@ -118,7 +119,7 @@ const navItems = [
     {
         id:1,
         title:"home",
-        link:'index',
+        link:'/',
     },
     {
         id:2, 

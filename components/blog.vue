@@ -28,7 +28,7 @@
                     </div>
                     <div class="p-4 border-l">
                         <h2 class="text-gray-950 text-2xl font-semibold">{{ item.title }}</h2>
-                        <p class="text-sm my-2">{{ item.desc }}} </p>
+                        <p class="text-sm my-2">{{ item.desc }} </p>
                         <ul v-for="list in item.lists" :key="list">
                             <li class="text-xs list-disc ml-4">{{ list }}</li>
                         </ul>

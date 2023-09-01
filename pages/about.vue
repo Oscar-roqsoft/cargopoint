@@ -1,7 +1,7 @@
 <template>
-    <div class="bg-[url('/Photo.png')]  bg-auto bg-center md:bg-contain  bg-no-repeat pt-10">
-        <div class="  max-w-[1150px] px-4 mx-auto">
-            <section class="min-h-[470px] md:min-h-screen  text-gray-100 flex flex-col justify-center items-start">
+    <div class="bg-[url('/Photo.png')] bg-center md:bg-cover ">
+        <div class="  max-w-[1150px] px-4 mx-auto h-full flex justify-start items-center">
+            <section class=" min-h-[500px] md:min-h-screen  text-gray-100 flex flex-col justify-center h-full">
                  <span class="border-l-2 pl-2 text-xs border-orange-400">Logistics & Supply Chain Solutions</span>
                  <h1 class="text-4xl my-2 font-bold">
                     About Our Logistics
@@ -9,9 +9,9 @@
                 
              </section>
         </div>
-     </div>
-
-     <section>
+    </div>
+    
+    <section>
         <div class=" max-w-[1150px] px-4   mx-auto">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 min-h-[450px] ">
                 <div class="flex bg-[url('/aboutImg.png')] bg-cover justify-center items-center h-[360px] my-8">
@@ -44,32 +44,11 @@
 
 
      <!-- what we do section  -->
-     <section class="min-h-[300px] md:min-h-[200px] my-6 bg-gray-200 py-6">
-        <div class="max-w-[1150px] px-4 mx-auto flex flex-col items-center text-gray-800">
-            <div class="md:w-[30%] mr-4 md:my-4">
-                <span class="text-xs border-l-2 pl-2 border-orange-500">What can we do</span>
-                <h2 class="text-lg font-semibold">Safe & Reliable Cargo Solutions</h2>
-            </div>
-            <div class="grid grid-cols-2 md:grid-cols-3 md:gap-6"> 
-                <div v-animate-on-scroll
-                v-for="item in services"
-                class="flex mt-4">
-                    <div class="flex items-start pt-2 mr-4">  
-                        <img :src="item.icon" alt="">
-                    </div>
-
-                    <div class="h-[100px] flex flex-col ">
-                        <h4 class="text-sm md:text-xl text-gray-800 font-semibold leading-tight">{{ item.title }}</h4>
-                        <p class="text-[10px] md:text-sm  text-gray-500">{{ item.desc }}</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-   </section>
+    <ServicesSection />
 
    <!-- our team section -->
    <section>
-    <div class="max-w-[1150px] px-4 mx-auto">
+    <div class="max-w-[1150px] p-4 mx-auto">
         <div class="pb-10 flex justify-center items-center">
             <div class="flex flex-col items-center justify-center">
                 <span class="text-xs border-l-2 px-2 py-1 border-[#FFB629] bg-gray-500 text-white ">The Transporters</span>
@@ -91,17 +70,34 @@
  <!-- pricing section -->
 
  <section>
-    <div class="max-w-[1150px] px-4 mx-auto">
+    <div class="max-w-[1150px] p-4 mx-auto">
         <div class="pb-10 flex justify-center items-center">
             <div class="flex flex-col items-center justify-center">
                 <span class="text-xs border-l-2 px-2 py-1 border-[#FFB629] bg-gray-500 text-white ">Pricing</span>
                 <h1 class="text-gray-950 font-extrabold text-lg my-1">Our Best Pricing</h1>
-                <Pricing />
+                <PricingComp/>
             </div>
         </div>
     </div>
  </section>
 
+ <!-- FAQ section -->
+   
+ <section>
+    <div class="bg-[#d4d4d4] ">
+        <FAQ class="pb-24 md:pb-0 mb-10 " />
+        <div class="max-w-[1150px] px-4   mx-auto pb-10">
+            <div class="grid grid-cols-2 md:grid-cols-4">
+                <img src="/gallery.png" >
+                <img src="/gallery1.png">
+                <img src="/gallery2.png">
+                <img src="/gallery3.png">
+            </div>
+        </div>
+    </div>
+ </section>
+
+ 
 </template>
 
 
